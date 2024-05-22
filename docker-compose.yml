@@ -14,7 +14,7 @@ services:
       - mongo # node-app depends on mongo -> mongo will start first
   
   mongo:
-    image: mongo
+    image: mongo:4.4.6
     environment:
       - MONGO_INITDB_ROOT_USERNAME=rodrigo
       - MONGO_INITDB_ROOT_PASSWORD=mypassword
